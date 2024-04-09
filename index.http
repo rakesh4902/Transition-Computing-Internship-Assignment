@@ -1,0 +1,19 @@
+### First User Registartion
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "username": "rakesh",
+  "email": "modir810@gmail.com",
+  "password": "rakesh123"
+}
+
+### Second User Registartion
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "username": "anji yadav",
+  "email": "anjiyadav@gmail.com",
+  "password": "anjiyadav123"
+}
