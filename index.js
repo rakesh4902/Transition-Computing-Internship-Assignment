@@ -7,7 +7,8 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/UserManagementDB')
+const MONGODB_URI = 'mongodb://localhost:27017/UserManagementDB' // My mongoDB URI after installing the mongodb compass make a connect then you will get the mongoDB uri paste here
+mongoose.connect(MONGODB_URI)
     .then(() => console.log('Connected to MongoDB'))
     .catch(err => console.error('Error connecting to MongoDB:', err));
 
